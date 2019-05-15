@@ -1,5 +1,11 @@
 # Homework 3-4: Coding style and Unit tests.
 
+##### Grade: 13/14  
+
+-1: In test_dataframe.py - you are using the '|' operator, which is the bitwise or. In general, people don't often use this in boolean expressions that are similar to what you have in the assert statement. Consider using the operators 'or' and 'and'.   
+
+------
+
 **Note: This homework has a total of 14 points.**
 
 In this homework, you will create two python modules and put them in PEP8 style.

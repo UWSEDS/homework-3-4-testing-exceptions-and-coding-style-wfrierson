@@ -11,7 +11,7 @@ def test_data_types():
     # Check if data has the expected data types
     data_headers_object = set(data.select_dtypes(include=['object']).columns.values)
     data_headers_int64 = set(data.select_dtypes(include=['int64']).columns.values)
-    assert (data_headers_object != headers_object) | (data_headers_int64 != headers_int64) is True
+    assert (data_headers_object != headers_object) or (data_headers_int64 != headers_int64) is True
 
 
 def test_data_rows():
